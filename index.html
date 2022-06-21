@@ -13,7 +13,7 @@
     <div class="content">
       <!--FORMULÁRIO DE LOGIN-->
       <div id="login">
-        <form method="post" action=""> 
+        <form method="post" action="/"> 
           <h1>Login</h1> 
           <p> 
             <label for="nome_login">Seu nome</label>
@@ -21,8 +21,8 @@
           </p>
            
           <p> 
-            <label for="email_login">Seu e-mail</label>
-            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+            <label for="senha_login">Sua senha</label>
+            <input id="senha_login" name="senha_login" required="required" type="password" placeholder="ex. 1234" /> 
           </p>
            
           <p> 
@@ -43,7 +43,7 @@
  
       <!--FORMULÁRIO DE CADASTRO-->
       <div id="cadastro">
-        <form method="post" action=""> 
+        <form method="post" action="/"> 
           <h1>Cadastro</h1> 
            
           <p> 
@@ -54,6 +54,11 @@
           <p> 
             <label for="email_cad">Seu e-mail</label>
             <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@sulamerica.com.br"/> 
+          </p>
+
+          <p> 
+            <label for="anexo_cad">Anexo</label>
+            <input id="anexo_cad" name="anexo_cad" required="required" type="file" placeholder="ex. seuarquivo.png"/>
           </p>
            
           <p> 
@@ -90,7 +95,7 @@
     }
   }
   function alertaLogin(){
-    if (validacao("email_login") && validacao("nome_login")){
+    if (validacao("senha_login") && validacao("nome_login")){
     alert("Login realizado com sucesso!")
     }
   }
